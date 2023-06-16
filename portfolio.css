@@ -75,15 +75,19 @@ section{
     animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
+   
+
     0%{
-        transform: translateY(0);
+        transform: translatex(0);
     }
     50%{
-        transform: translateY(-2.4rem);
+        transform: translatex(-2.4rem);
     }
     100%{
-        transform: translateY(0);
+        transform: translatex(0);
     }
+
+
 }
 .home-content h3{
     font-size: 3.2rem;
@@ -339,7 +343,7 @@ span{
 @media only screen and (max-width: 600px){
     .logo{
     display: flex;
-    justify-content: center;}
+    
 }
 @media only screen and (max-width: 991px){
     .header{
@@ -348,6 +352,78 @@ span{
     }
     section{
         padding: 10rem 3% 2rem;
+    }
+    .portfolio-layer h4{
+        font-size: .9rem;
+        margin-top: .4rem;
+    
+    }
+    .portfolio-layer p{
+        font-size: .9rem;
+        margin-top: .2rem;
+    }
+}
+@media only screen and (max-width: 768px){
+  #menu-icon{
+    display: block;
+    margin-top: -37px;
+  }
+  .navbar{
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    display: none;
+  }
+  .navbar.active{
+    display: block;
+  }
+.navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+}
+
+@media only screen and (max-width: 630px){
+    .portfolio-layer h4{
+        font-size: .8rem;
+        margin-top: .2rem;
+    }
+    .portfolio-layer p{
+        font-size: .8rem;
+        margin-top: .1rem;
+    }
+
+
+}
+@media only screen and (max-width: 565px){
+    .portfolio-layer h4{
+        font-size: .9rem;
+        margin-top: .2rem;
+    }
+    .portfolio-layer p{
+        font-size: .9rem;
+        margin-top: .1rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+}
+@media only screen and (max-width: 380px){
+    .portfolio-layer h4{
+        font-size: .7rem;
+        margin-top: .2rem;
+    }
+    .portfolio-layer p{
+        font-size: .65rem;
+        margin-top: .1rem;
     }
 
 
